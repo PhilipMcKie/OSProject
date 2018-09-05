@@ -67,6 +67,10 @@ int menu(){
     printf("G o o d b y e!\n");
     break;
   }
+  if((strcmp(inputArray[0], "version")) == 0){
+    Version();
+    continue;
+  }
 
   if(checkBin(inputArray[0]) != 1){
     printf("Command not found! Please check the documentation!\n>");

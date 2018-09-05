@@ -1,0 +1,35 @@
++++++++++++++++++++++++++++++++++++++++++++
+		HELP
++++++++++++++++++++++++++++++++++++++++++++
+
++Help is available for a variety of commands.
+
++Here is the current list of help files
+	with a brief description.
+
++To get more information on a command type HELP *COMMAND
+
+(ex. help version)
+
+#####	Commands   #####
+
+help
+-(The page you are currently on. Displays useage
+for the help command)
+
+version
+-(Displays the current version of TechOS)
+
+date
+-(Displays or sets the current date)
+	-type "help date" for more info
+
+time
+-(Displays the current time)
+
+terminate
+-(This kills the TechOS)
+
+---------------------------------------------------
+		END HELP
+---------------------------------------------------

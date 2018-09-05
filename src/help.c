@@ -30,8 +30,6 @@ int main(int argc, char* A[])
      FILE *fptr;
 
     char filename[100], c;
-    printf("A[1] is %s, strlen of A[1] is %d\n", A[1], strlen(A[1]));
-
     //scanf("%s", filename);
 
     // Open file
@@ -41,8 +39,14 @@ int main(int argc, char* A[])
     // }
      char file[100];
      char* dir = "etc/help/";
+     if(A[1] == NULL){
+       
+       strncpy(file, "etc/help/help", 100);
+     }
+     else{
      strncpy(file, dir, 100);
      strncat(file, A[1], 100);
+   }
 
     fptr = fopen(file, "r");
     if (fptr == NULL)

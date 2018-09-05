@@ -35,13 +35,13 @@ void setDate(char* dt){
     printf("Date format error!");
     return;
   }
-  day = atoi(parsedString);
+  month = atoi(parsedString);
   parsedString = strtok(NULL, "/\n");
   if(parsedString == NULL){
     printf("Date format error!");
     return;
   }
-  month = atoi(parsedString);
+  day = atoi(parsedString);
   parsedString = strtok(NULL, "/\n");
   if(parsedString == NULL){
     printf("Date format error!");

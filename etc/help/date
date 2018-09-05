@@ -1,0 +1,17 @@
+++++++++++++++++++++++++++++++++++++++++++++
+	HELP date
+++++++++++++++++++++++++++++++++++++++++++++
+
+Usage: date [options] 
+	date will display the current date in MM-DD-YYYY format
+
+	set MM/DD/YYYY
+		sets the current system date to MM/DD/YYYY.
+		date must be run as the root user to change the system time
+		!!Caution!! Sensitive system processes can be crashed by
+		changing the system time.
+
+
+--------------------------------------------
+	END help date
+--------------------------------------------
