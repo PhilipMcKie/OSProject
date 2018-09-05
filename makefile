@@ -1,5 +1,5 @@
 CC=gcc
-
+all: COMHAN time date help
 COMHAN: COMHAN.o stringlib.o
 	$(CC) -o COMHAN src/o/COMHAN.o src/o/stringlib.o
 
