@@ -16,10 +16,10 @@ typedef struct pthread_information{
   char** COMLINE;
 }pinf;
 
-char A[] = "Version R1";
+char A[] = "Version R1.1\n09/09/2018\nBrandon Dale\nJoshua Ellison\nPhilip McKie\n\nTechOS>";
 
 void Version(){
-  printf("%s\n", A);
+  printf("%s", A);
 }
 
 int checkBin(char A[])
@@ -53,14 +53,14 @@ int menu(){
   struct dirent *dir;
   d = opendir(".");
 
-  printf("Welcome to Tech OS\n>");
+  printf("Welcome to Tech OS\nTechOS>");
   char input[50];
   char** inputArray;
   do{
   fgets(input, 50, stdin);
   int argsc = split(input, &inputArray);
   if(argsc == -1){
-    printf("\n>");
+    printf("\nTechOS>");
     continue;
   }
   if((strcmp(inputArray[0], "terminate")) == 0){
@@ -73,7 +73,7 @@ int menu(){
   }
 
   if(checkBin(inputArray[0]) != 1){
-    printf("Command not found! Please check the documentation!\n>");
+    printf("Command not found! Please check the documentation!\nTechOS>");
     continue;
   }
   char COMNAME[100];
@@ -92,7 +92,7 @@ int menu(){
       waitpid(pid, 0, 0);
     }
 
-  printf("\n>");
+  printf("\nTechOS>");
 }while(1);
 
 }

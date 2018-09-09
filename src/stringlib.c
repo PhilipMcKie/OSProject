@@ -63,6 +63,13 @@ int split(char* A, char*** B){
 
   return counter;
 }
+
+
+
+
+
+
+
 int btrstrcmp(char* arr1, char* arr2){
   int arr1len = strlen(arr1);
   int arr2len = strlen(arr2);
