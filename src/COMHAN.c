@@ -9,6 +9,7 @@
 #include <dirent.h>
 #include <string.h>
 #include "stringlib.h"
+#include "PCB.h"
 
 typedef struct pthread_information{
   char* COMNAME;
@@ -16,7 +17,7 @@ typedef struct pthread_information{
   char** COMLINE;
 }pinf;
 
-char A[] = "Version R1.1\n09/09/2018\nBrandon Dale\nJoshua Ellison\nPhilip McKie\n\nTechOS>";
+char A[] = "Version R1.1\n09/24/2018\nBrandon Dale\nJoshua Ellison\nPhilip McKie\n\nTechOS>";
 
 void Version(){
   printf("%s", A);
@@ -69,6 +70,13 @@ int menu(){
   }
   if((strcmp(inputArray[0], "version")) == 0){
     Version();
+    printf("\nTechOS>");
+    continue;
+  }
+
+  if((strcmp(inputArray[0], "pctl")) == 0){
+    pctl(inputArray, argsc);
+    printf("\nTechOS>");
     continue;
   }
 
