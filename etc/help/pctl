@@ -1,0 +1,50 @@
+++++++++++++++++++++++++++++++++++++++++++++++++
+	HELP PCTL
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+Usage: pctl (Option1 | Option2 |...)
+
+	-Options:
+		createpcb (Process name, Process Class, Process Priority)
+		-Usage
+			Creates a new PCB with the given information. The name
+			Must be at least 8 characters
+
+		deletepcb (Process name)
+		-Usage
+			Deletes a PCB with the given name
+		suspend (Process name)
+		-Usage
+			Suspends a process with the given name
+		resume (Process name)
+		-Usage
+			Resumes a process with the given name
+		
+		block (Process name)
+		-Usage
+			Block a process with the given name
+		unblock (Process Name)
+		-Usage
+			unblock a process with the given name
+       setpriority (Process name, priority)
+		-Usage
+Sets the priority of a given process to the given integer Priority
+		showpcb (Process name)
+		-Usage
+			Displays information about the given PCB
+		showall
+		-Usage
+			Displays information about all PCBs
+		showready
+		-Usage 
+			Displays Information about all Ready PCBs
+		showblocked
+		-Usage
+			Displays information about all blocked PCBs
+		
+			
+
+--------------------------------------------
+	END help PCTL
+--------------------------------------------
+
